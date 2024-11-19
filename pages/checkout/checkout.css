@@ -1,0 +1,169 @@
+body{
+    height: 100vh;
+    
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    border: 1px solid var(--border);
+    display: flex;
+    background-color: var(--background);
+}
+
+
+.contentForm{
+    display: flex;
+    flex: 1;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--background); 
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    box-shadow: -10px 0px 5px -5px var(--foreground);
+}
+
+.infoUser{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); 
+    gap: 20px;
+}
+
+.method{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+legend{
+   margin-bottom: 20px;
+}
+
+.card{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    'tarjeta tarjeta'
+    'seguridad expiracion';
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: 
+        'tarjeta'
+        'seguridad'
+        'expiracion';
+    }
+}
+
+label[for='tarjeta']{
+    grid-area: tarjeta;
+}
+
+label[for="expiracion"]{
+    grid-area: expiracion;
+}
+
+label[for="seguridad"]{
+    grid-area: seguridad;
+}
+
+
+legend,h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p{
+    color: var(--secondary);
+}
+
+
+
+input[type="text"], input[type="email"]{
+    padding: .5rem;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;   
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+    height: max-content;
+}
+
+button{
+    height: max-content;
+    padding: 1rem 4rem;
+    background-color: var(--muted-foreground);
+    color: var(--foreground);
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer ;
+
+}
+
+.checkoutProducts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+    flex: 0.4;
+    padding: 15px;
+}
+
+
+article{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--secondary);
+    width: 100%;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+
+input{
+    margin-top: 5px;
+}
+
+
+input[type="radio"]{
+    & + span{
+        font-weight: 600;
+    }
+}
+
+
+.total{
+    width:  100%;
+
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+
+
+    & > span{
+        font-weight: 600;
+    }
+}

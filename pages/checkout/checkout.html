@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/pages/checkout/checkout.css">
+    <script type="module" src="/pages/checkout/checkout.script.js"></script>
+    <script type="module" src="/components/header-component.js"></script>
+</head>
+
+<body>
+    <header-component title="Finalizar Compra"></header-component>
+    <main>
+        <section class="checkoutProducts">
+        </section>
+
+        <section class="contentForm">
+            <form action="">
+                <fieldset  class="infoUser">
+                    <legend>Información del Cliente</legend>
+                    <label for="nombre">
+                        <span>Nombre</span>
+                        <input required type="text" id="nombre" name="nombre" placeholder="Hugo Sanchez"">
+                    </label>
+
+                    <label for="correo">
+                        <span>Correo electronico</span>
+                        <input required type="email" id="correo" name="correo" placeholder="1234 5678 9012 3456">
+                    </label>
+
+
+                    <label for="direccion">
+                        <span>Dirección</span>
+                        <input required type="text" id="direccion" name="direccion" placeholder="calle principal 123">
+                    </label>
+
+                    <label for="telefono">
+                        <span>Telefono</span>
+                        <input required type="text" id="telefono" name="telefono" placeholder="2954123456">
+                    </label>
+                </fieldset>
+
+                <fieldset class="method">
+                    <legend>Método de Pago</legend>
+                    <label for="tarjeta">
+                        <input required type="radio" id="tarjeta" name="metodoPago" value="credito/debito" checked>
+                        <span>Tarjeta de Credito/Debito</span>
+                    </label>
+
+                    <label for="paypal">
+                        <input required type="radio" id="paypal" name="metodoPago" value="paypal" >
+                        <span>PayPal</span>
+                    </label>
+                    
+                    <label for="transferencia">
+                        <input required type="radio" id="transferencia" name="metodoPago" value="transferencia">
+                        <span>Transferencia Bancaria</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="card"></fieldset>
+
+                <button class="pays">Pagar</button>
+            </form>
+
+        </section>
+
+
+   
+
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/pages/signup/signup.css">
+    <script src="/pages/signup/signup.js" type="module"></script>
+    <title>Iniciar Sesion</title>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <section>
+                <legend>Registro</legend>
+                <p>Crea tu cuenta para acceder a nuestros servicios.</p>
+            </section>
+            <fieldset class="selectedRubro">
+                <label for="cliente">
+                    <input type="radio" id="cliente" name="rubro" value="cliente" checked>
+                    <span>Cliente</span>
+                </label>
+                <label for="vendedor">
+                    <input type="radio" id="vendedor" name="rubro" value="vendedor">
+                    <a href="/pages/signup/seller/seller.html">Vendedor</a>
+                </label> 
+            </fieldset>
+
+            <fieldset class="infoUser">
+                <label for="name">
+                    <span>Nombre</span>
+                    <input type="text" id="name" name="name" placeholder="Nombre" >
+                </label>
+                <label for="email">
+                    <span>Correo Electrónico</span>
+                    <input type="email" id="email" name="email" placeholder="Correo Electrónico" >
+                </label>
+                <label for="password">
+                    <span>Contraseña</span>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" >
+                </label>
+                <label for="passwordCconfirm">
+                    <span>Confirmar Contraseña</span>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Confirmar Contraseña" >
+                </label>
+                <label for="phone">
+                    <span>Teléfono</span>
+                    <input type="tel" id="phone" name="phone" placeholder="Teléfono" >
+                </label>
+                <label for="address">
+                    <span>Dirección</span>
+                    <input type="text" id="address" name="address" placeholder="Dirección" >
+                </label>
+                <label for="city">
+                    <span>Ciudad</span>
+                    <input type="text" id="city" name="city" placeholder="Ciudad" >
+                </label>
+                <label for="country">
+                    <span>País</span>
+                    <input type="text" id="country" name="country" placeholder="País" >
+                </label>
+                <label for="zip">
+                    <span>Código Postal</span>
+                    <input type="text" id="zip" name="zip" placeholder="Código Postal" >
+                </label>
+            </fieldset>
+
+
+            <menu>
+                <button>Registrarse</button>
+                <a href="/pages/signup/login.html">¿Ya tienes una cuenta? Inicia sesión</a>
+            </menu>
+        </form>
+    </main>
+</body>
+</html>

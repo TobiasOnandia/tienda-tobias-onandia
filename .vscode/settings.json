@@ -1,0 +1,11 @@
+{
+    "oxc.enable": true,
+    "conventionalCommits.scopes": [
+        "newScope"
+    ],
+    "cSpell.words": [
+        "Producto",
+        "totales",
+        "Vendedor"
+    ]
+}

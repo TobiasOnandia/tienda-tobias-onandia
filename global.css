@@ -1,0 +1,68 @@
+:root {
+  --background: #ffffff;
+  --foreground: #f4f4f5;
+  --primary: #09090b;  
+  --secondary: #a1a1aa; 
+  --muted: #d4d4d8; 
+  --muted-foreground: #27272a;
+  --accent: #18181b; 
+  --accent-foreground: #e4e4e7;  
+  --border: #52525b;  
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif; 
+} 
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+  color: var(--primary);
+  background-color: var(--foreground);
+  font-family: 'Montserrat', sans-serif; 
+
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+ 
+a {
+    text-decoration: none;
+    color: var(--foreground);
+
+    &:hover{
+      text-decoration: underline;
+    }
+    
+}

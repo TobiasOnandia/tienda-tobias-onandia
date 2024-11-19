@@ -1,0 +1,128 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+form {
+    width: max-content;
+    height: max-content;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--background);
+}
+
+legend{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    & + p {
+        font-weight: 200;
+    }
+}
+
+
+span{
+    font-size: 1rem;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.selectedRubro{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--foreground);
+    text-align: center;
+    padding: 4px;
+} 
+
+
+.infoSeller {
+    display: grid;
+}
+
+label[for="emailSeller"],
+label[for="zipSeller"], 
+label[for="nameSeller"], 
+label[for="addressSeller"], 
+label[for="phoneSeller"],
+label[for="fiscalSeller"],
+label[for="typeSeller"]
+{
+    grid-column: span 2;
+}
+
+label{
+    font-size: .9rem;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    &:has(input:checked){
+        background-color: var(--background);
+    }
+}
+
+a{
+    width: 100%;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input, select{
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    color: var(--primary);
+}
+
+
+menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button{
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--muted-foreground);
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--foreground);
+    &:hover{
+        background-color: var(--muted-foreground);
+    }
+    
+}
+a{
+    color: var(--muted-foreground);
+    font-size: .9rem;
+    text-align: center;
+
+    transition: all 0.3s ease;
+    &:hover{
+        color: var(--muted-foreground);
+    }
+
+}

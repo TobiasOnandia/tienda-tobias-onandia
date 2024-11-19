@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/pages/signup/seller/seller.css">
+    <script src="/pages/signup/seller/seller.js" type="module"></script>
+    <title>Sign Up Seller</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <section>
+                <legend>Registro</legend>
+                <p>Crea tu cuenta para acceder a nuestros servicios.</p>
+            </section>
+            <fieldset class="selectedRubro">
+                <label for="cliente">
+                    <input type="radio" id="cliente" name="rubro" value="cliente" >
+                    <a href="/pages/signup/signup.html">Cliente</a>
+                </label>
+                <label for="vendedor">
+                    <input type="radio" id="vendedor" name="rubro" value="vendedor" checked>
+                    <a href="/pages/signup/seller/seller.html">Vendedor</a>
+                </label> 
+            </fieldset>
+            <fieldset class="infoSeller ">
+                <label for="nameSeller">
+                    <span>Nombre</span>
+                    <input type="text" id="nameSeller" name="nameSeller" placeholder="Nombre" >
+                </label>
+                <label for="emailSeller">
+                    <span>Correo Electrónico</span>
+                    <input type="emailSeller" id="emailSeller" name="emailSeller" placeholder="Correo Electrónico" >
+                </label>
+                <label for="passwordSeller">
+                    <span>Contraseña</span>
+                    <input type="password" id="passwordSeller" name="passwordSeller" placeholder="Contraseña" >
+                </label>
+                <label for="passwordConfirmSeller">
+                    <span>Confirmar Contraseña</span>
+                    <input type="password" id="passwordConfirmSeller" name="passwordConfirmSeller" placeholder="Confirmar Contraseña" >
+                </label>
+                <label for="phoneSeller">
+                    <span>Teléfono</span>
+                    <input type="tel" id="phoneSeller" name="phoneSeller" placeholder="Teléfono" >
+                </label>
+                <label for="addressSeller">
+                    <span>Dirección</span>
+                    <input type="text" id="addressSeller" name="addressSeller" placeholder="Dirección" >
+                </label>
+                <label for="citySeller">
+                    <span>Ciudad</span>
+                    <input type="text" id="citySeller" name="citySeller" placeholder="Ciudad" >
+                </label>
+                <label for="countrySeller">
+                    <span>País</span>
+                    <input type="text" id="countrySeller" name="countrySeller" placeholder="País" >
+                </label>
+                <label for="zip">
+                    <span>Código Postal</span>
+                    <input type="text" id="zip" name="zip" placeholder="Código Postal" >
+                </label>
+                <label for="fiscal">
+                    <span>Identificación Fiscal</span>
+                    <input type="text" id="fiscal" name="fiscal" placeholder="Identificación Fiscal" >
+                </label>
+                <label for="typeSeller">
+                    <select name="typeSeller" id="typeSeller">
+                        <option value="individual">Venta por menor</option>
+                        <option value="corporate">Venta por Mayor</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <menu>
+                <button>Registrarse</button>
+                <a href="/pages/signup/login.html">¿Ya tienes una cuenta? Inicia sesión</a>
+            </menu>
+        </form>
+    </main>
+</body>
+</html>
